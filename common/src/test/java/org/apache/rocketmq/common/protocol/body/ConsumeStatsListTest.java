@@ -33,11 +33,11 @@ public class ConsumeStatsListTest {
     @Test
     public void testFromJson() {
         ConsumeStats consumeStats = new ConsumeStats();
-        ArrayList<ConsumeStats> consumeStatsListValue = new ArrayList<>();
+        ArrayList<ConsumeStats> consumeStatsListValue = new ArrayList<ConsumeStats>();
         consumeStatsListValue.add(consumeStats);
-        HashMap<String, List<ConsumeStats>> map = new HashMap<>();
+        HashMap<String, List<ConsumeStats>> map = new HashMap<String, List<ConsumeStats>>();
         map.put("subscriptionGroupName", consumeStatsListValue);
-        List<Map<String/*subscriptionGroupName*/, List<ConsumeStats>>> consumeStatsListValue2 = new ArrayList<>();
+        List<Map<String/*subscriptionGroupName*/, List<ConsumeStats>>> consumeStatsListValue2 = new ArrayList<Map<String, List<ConsumeStats>>>();
         consumeStatsListValue2.add(map);
 
         String brokerAddr = "brokerAddr";
